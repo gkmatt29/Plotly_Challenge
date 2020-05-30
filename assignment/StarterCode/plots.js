@@ -45,6 +45,7 @@ function bubbleChart(name){
 
       var otu_ids = filterData1.otu_ids
       var sample_values = filterData1.sample_values
+      var otu_labels = filterData1.otu_labels
 
       // var otu_ids = otu_ids.map(l => "OTU "+ l)
       
@@ -52,10 +53,11 @@ function bubbleChart(name){
       var trace2 = {
         x: otu_ids,
         y: sample_values,
+        text: otu_labels,
         mode: 'markers',
         marker: {    
-          color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-          size: [40, 60, 80, 100]
+          color: otu_ids,
+          size: sample_values
         }
       };
       
