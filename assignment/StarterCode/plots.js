@@ -49,7 +49,6 @@ function bubbleChart(name){
 
       // var otu_ids = otu_ids.map(l => "OTU "+ l)
       
-      console.log(sample_values)
       var trace2 = {
         x: otu_ids,
         y: sample_values,
@@ -84,7 +83,6 @@ function barChart(name){
 
       var otu_ids = otu_ids.map(l => "OTU "+ l)
       
-      console.log(sample_values)
       
       var trace1 = {
         x: sample_values,
@@ -138,6 +136,4 @@ function updateName(sampleId){
         <p> Wfreq: ${person.wfreq} </p>
         </div>`})
     }       
-        
-
-        
+    
